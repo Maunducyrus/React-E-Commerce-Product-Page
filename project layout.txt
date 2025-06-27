@@ -1,0 +1,88 @@
+src/
+│
+├── assets/
+│   └── logo.png                 # (add your logo image here)
+│
+├── components/
+│   ├── Cart/
+│   │   ├── Cart.jsx
+│   │   ├── CartItem.jsx
+│   │   ├── MiniCart.jsx
+│   │   └── CartTotals.jsx
+│   ├── Product/
+│   │   ├── ProductCard.jsx
+│   │   ├── ProductGallery.jsx
+│   │   ├── ProductInfo.jsx
+│   │   ├── ProductVariants.jsx
+│   │   ├── ProductReviews.jsx
+│   │   ├── ProductSpecs.jsx
+│   │   ├── RelatedProducts.jsx
+│   │   └── SizeGuide.jsx
+│   ├── Wishlist/
+│   │   ├── Wishlist.jsx
+│   │   └── WishlistItem.jsx
+│   ├── Filters/
+│   │   ├── FilterSidebar.jsx
+│   │   ├── SearchBar.jsx
+│   │   ├── SortOptions.jsx
+│   │   └── AttributeFilters.jsx
+│   ├── Checkout/
+│   │   ├── AddressForm.jsx
+│   │   ├── PaymentOptions.jsx
+│   │   ├── OrderSummary.jsx
+│   │   ├── PromoCode.jsx
+│   │   └── ShippingMethod.jsx
+│   ├── UI/
+│   │   ├── Button.jsx
+│   │   ├── Modal.jsx
+│   │   ├── Toast.jsx
+│   │   ├── Skeleton.jsx
+│   │   └── Loader.jsx
+│   ├── Navigation/
+│   │   ├── Header.jsx
+│   │   ├── Navbar.jsx
+│   │   └── Footer.jsx
+│   └── RecentlyViewed/
+│       └── RecentlyViewed.jsx
+│
+├── contexts/
+│   ├── CartContext.jsx
+│   ├── WishlistContext.jsx
+│   ├── ProductContext.jsx
+│   └── UserContext.jsx
+│
+├── hooks/
+│   ├── useCart.js
+│   ├── useWishlist.js
+│   ├── useProductFilter.js
+│   └── useLocalStorage.js
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── ProductPage.jsx
+│   ├── CartPage.jsx
+│   ├── WishlistPage.jsx
+│   ├── CheckoutPage.jsx
+│   └── NotFound.jsx
+│
+├── routes/
+│   └── AppRoutes.jsx
+│
+├── data/
+│   ├── products.js
+│   ├── categories.js
+│   └── users.js
+│
+├── styles/
+│   ├── main.css
+│   └── variables.css
+│
+├── utils/
+│   ├── formatPrice.js
+│   ├── calcDiscount.js
+│   └── api.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+

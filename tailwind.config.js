@@ -1,4 +1,6 @@
-// export default {
+// module.exports = {
+//   purge: [],
+//   darkMode: false, // or 'media' or 'class'
 //   theme: {
 //     extend: {},
 //   },
@@ -7,10 +9,11 @@
 //   },
 //   plugins: [],
 // }
-
-// tailwind.config.js (ESM)
 export default {
-  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"], // Update paths
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {},
   },

@@ -1,7 +1,3 @@
-// export default function useProductFilter() {
-//   // Add filter logic here
-//   return {};
-// }
 import { useState } from 'react';
 
 export default function useProductFilter(initialProducts) {
@@ -17,9 +13,15 @@ export default function useProductFilter(initialProducts) {
     ));
   };
 
-  const sortBy = (key) => {
-    setFiltered([...filtered].sort((a, b) => a[key] - b[key]));
+  const sortBy = (key, direction = 'asc') => {
+    const sorted = [...filtered].sort((a, b) => {
+      if (direction === 'asc') return a[key] - b[key];
+      else return b[key] - a[key];
+    });
+    setFiltered(sorted);
   };
 
-  return { filtered, filterByCategory, searchByKeyword, sortBy };
+  const resetFilter = () => setFiltered(initialProducts);
+
+  return { filtered, filterByCategory, searchByKeyword, sortBy, resetFilter };
 }
